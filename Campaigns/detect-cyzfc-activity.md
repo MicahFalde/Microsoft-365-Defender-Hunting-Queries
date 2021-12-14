@@ -13,7 +13,7 @@ The following queries detect activity associated with the malicious DLL, *cyzfc.
 ## Query
 
 ```Kusto
-​// Query 1: Events involving the DLL container
+// Query 1: Events involving the DLL container
 let fileHash = "9858d5cb2a6614be3c48e33911bf9f7978b441bf";
 find in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents,
 DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents)
